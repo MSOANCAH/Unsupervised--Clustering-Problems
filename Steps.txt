@@ -1,0 +1,24 @@
+Steps :
+
+1.Design the model for events(contains events keywords)
+
+2.Search Twitter data, get tweets related to the events
+
+3.Store the data and fetch only tweets(text) from json file
+
+4.Feature extracting and clustering ( tweets )
+
+5. Stemming new data from tweeter and predicting the cluster for every tweet
+like tweet1 -->cluster 1
+tweet2-->cluster 3 and so on...
+
+
+Things I missed
+
+unfortunately I can not spend much time at this moment on this problem
+
+so there are few things i did not do it (as they take much time for me to do it)
+
+1.Cluster time series
+2.MongoDB storage
+
