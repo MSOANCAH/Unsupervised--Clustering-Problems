@@ -9,7 +9,7 @@ WORDS = ['#INDvsSL', '#SLvIND','2ndODI']
 
 consumer_key = ''
 consumer_secret = ''
-access_token = ''
+access_token = '-'
 access_secret = ''
 
 #stemming the data
@@ -106,9 +106,10 @@ for event in events:
             for status in tweepy.Cursor(api.search, q=text).items(1):
                 # Process a single status
                 json_str = json.dumps(status._json)
-
+                print(json_str)
                 with open('C:/Users/Madhu/Desktop/cricketmodelling.json', 'a') as f:
                     f.write(json_str)
+                    f.write('\n')
 
 
 # Twitter Data text collecting
@@ -229,5 +230,6 @@ for tweet in tweetlist_stream:
     Y = vectorizer.transform(tweet)
     prediction = model.predict(Y)
     print(prediction)
+
 
 
