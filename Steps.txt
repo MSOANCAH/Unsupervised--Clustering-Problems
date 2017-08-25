@@ -12,6 +12,15 @@ Steps :
 like tweet1 -->cluster 1
 tweet2-->cluster 3 and so on...
 
+How to run
+
+1. Add Tweeter config data (key and secret)
+
+2. Run MongoDB instance (if you want to store the data)
+
+3. Edit the json file locations path in the code
+
+4. Open terminal run the code (giving the two json files path as arguments)
 
 Things I missed
 
